@@ -110,3 +110,60 @@ footer .redes-sociales a{
 footer .redes-sociales a:hover{
     text-decoration: none;
 }
+
+@media screen and (max-width: 800px) {
+    .main {
+        width: 100%;
+    }
+
+    aside{
+        width: 100%;
+        flex-direction: row;
+    }
+
+    aside .ad{
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 670px) {
+    header {
+        flex-direction: column;
+        padding-bottom: 20px;
+    }
+
+    header .menu{
+        width: 100%;
+        background: rgba(255, 255, 255, .2);
+        text-align: center;
+        padding: 20px;
+    }
+
+    header .menu a{
+        margin-bottom: 0 20px;
+    }
+
+    header .logo{
+        margin-bottom: 20px;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    footer .autor{
+        order:2;
+    }
+
+    footer .redes-sociales{
+        order: 1;
+        margin-bottom: 20px;
+    }
+}
+
+ @media screen and (max-width: 550px) {
+     aside{
+         display: none;
+     }
+ }
