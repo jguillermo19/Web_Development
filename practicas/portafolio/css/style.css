@@ -212,6 +212,7 @@ footer .contacto .formulario input[type="text"]:focus,
 footer .contacto .formulario input[type="email"]:focus,
 footer .contacto .formulario textarea:focus {
     border: 2px solid #3895ea;
+    outline: none;
 }
 
 footer .contacto .formulario input[type="text"],
