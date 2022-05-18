@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="es-Mx">
+<head>
+    <meta charset="UTF-8">
+    <title>El Dramatico</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="./static/css/styles.css">
+
+    <!-- Letra fuente -->
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+
+    <!-- Fontawesome -->
+    <script src="https://kit.fontawesome.com/9bdbfb0a2a.js" crossorigin="anonymous"></script>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="./static/img/favicon.ico">
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+</head>
+<body>
+    <!--Bar nav-->
+    <header>
+        <div class="contenedor">
+            <nav class="menu">
+                <p class="logo">El Dramático</p>
+                <button class="toggle">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+                <ul class="nav-menu">
+                    <li class="nav-menu-item"><a href="#" id="btn-acerca-de">Acerca de</a></li>
+                    <li class="nav-menu-item"><a href="#" id="btn-menu">Menú</a></li>
+                    <li class="nav-menu-item"><a href="#" id="btn-galeria">Galería</a></li>
+                    <li class="nav-menu-item"><a href="#" id="btn-ubicacion">Ubicación</a></li>
+                </ul>
+            </nav>
+
+            <div class="texto">
+                <img src="./static/img/Logo.png" alt="">
+                <!--h1 class="nombre">Tortar y Tacos <span>El Dramático</span></h1>
+                <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                    Officia quaerat iste labore aut fuga sapiente!</h3-->
+            </div>
+        </div>
+    </header>
+
+    <!--Main-->
+    <section class="main">
+        <section class="acerca-de" id="acerca-de">
+            <div class="contenedor">
+                <div class="foto">
+                    <img src="./static/img/acerca-de.jpg" alt="">
+                </div>
+                <article>
+                    <h3>Tortas y Tacos El Dramático</h3>
+                    <p>En la calle Cedro número 61, entre Amado Nervo y Hortensia, se encuentra un lugar poco convencional en el que encontrarás una apreciable cantidad de pósteres alusivos al cine, al teatro y, concretamente, a la actuación. El Dramático, pequeño local en el que Jesús y Errol atienden a su distinguida clientela.</p>
+                    <p>A raíz de la pandemia, El Dramático lleva más de un año abierto. Errol tiene una carrera emergente en la actuación, así que decidió exponer en sus muros y en el menú a grandes personajes del mundo del cine y el teatro, desde las tortas inspiradas en María Félix, “el Taco de Lorca”, hasta “Los Chilaquiles de Macario”, con pollo por supuesto; siendo un maravilloso despliegue de personalidades y temas sobre las disciplinas artísticas ya mencionadas. Los comensales ya van eligiendo a sus “estrellas” favorita.</p>
+                    <p>El Dramático ha tenido una buena recepción por parte de los vecinos, ya que la mayoría son amantes de la cultura popular y estos personajes les son sumamente familiares. Esta oferta culinaria abre de lunes a sabado entre las 9 de la mañana y las 10 de la noche.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="menu">
+            <div class="contenedor">
+                <h3 class="titulo" id="platillos">Menu</h3>
+                <div class="contenedor-menu">
+                    <div class="contenedor-menu2">
+                        <article>
+                            <p class="categoria">Tortas</p>
+                            <div class="platillo">
+                                <p class="nombre">La Félix</p>
+                                <p class="descripcion">de cochinita.</p>
+                                <p class="precio">$52</p>
+                            </div>
+                            <div class="platillo">
+                                <p class="nombre">La Grotowski</p>
+                                <p class="precio">$52</p>
+                                <p class="descripcion">de pierna al horno.</p>
+                            </div>
+                            <div class="platillo">
+                                <p class="nombre">La Strasberg</p>
+                                <p class="precio">$39</p>
+                                <p class="descripcion">de milanesa de res o de pollo.</p>
+                            </div>
+                            <div class="platillo">
+                                <p class="nombre">La Brecht</p>
+                                <p class="descripcion">de salchicha.</p>
+                                <p class="precio">$39</p>
+                            </div>
+                            <div class="platillo">
+                                <p class="nombre">La Dramática</p>
+                                <p class="precio">$61</p>
+                                <p class="descripcion">de milanesa con salchicha.</p>
+                            </div>
+                            <div class="platillo">
+                                <p class="nombre">La Absurda</p>
+                                <p class="precio">$67</p>
+                                <p class="descripcion">de pierna al horno, milanesa y salchicha.</p>
+                            </div>
+                            <div class="platillo">
+                                <p class="nombre" style="font-size: 20px">Choripan</p>
+                                <p class="precio">$65</p>
+                                <p class="nombre" style="clear: both; font-size: 20px">Pepito</p>
+                                <p class="precio">$80</p>
+                                <p class="nombre" style="clear: both; font-size: 20px">Quesillo extra</p>
+                                <p class="precio">$5</p>
+                            </div>
+                        </article>
+                        <article>
+                            <p class="categoria">Chilaquiles</p>
+                            <div class="platillo">
+                                <p class="nombre">Los Miserables</p>
+                                <p class="descripcion">(Sencillos).</p>
+                                <p class="precio">$28</p>
+                            </div>
+                            <div class="platillo">
+                                <p class="nombre">Los Macario</p>
+                                <p class="descripcion">con pollo.</p>
+                                <p class="precio">$44</p>
+                            </div>
+                            <div class="platillo">
+                                <p class="nombre">Los Infantes</p>
+                                <p class="descripcion">con cochinita.</p>
+                                <p class="precio">$46</p>
+                            </div>
+                            <div class="platillo">
+                                <p class="nombre">Los del Río</p>
+                                <p class="descripcion">con pierna al horno.</p>
+                                <p class="precio">$46</p>
+                            </div>
+                            <div class="platillo">
+                                <p class="nombre">Los de casa blanca</p>
+                                <p class="precio">$56</p>
+                                <p class="descripcion">con arrachera.</p>
+                            </div>
+                            <div class="platillo">
+                                <p class="nombre">Los Dramáticos</p>
+                                <p class="precio">$70</p>
+                                <p class="descripcion">con arrachera, chistorra y chorizo argentino.</p>
+                            </div>
+                        </article>
+                        <article style="clear: both;">
+                            <p class="categoria">Tacos</p>
+                            <div class="platillo">
+                                <p class="nombre">El taco Muller</p>
+                                <p class="descripcion">de Arrachera.</p>
+                                <p class="precio">$22</p>
+                            </div>
+                            <div class="platillo">
+                                <p class="nombre">El taco Dragún</p>
+                                <p class="precio">$19</p>
+                                <p class="descripcion">de chorizo argentino.</p>
+                            </div>
+                            <div class="platillo">
+                                <p class="nombre">El taco de Lorca</p>
+                                <p class="descripcion">de chistorra.</p>
+                                <p class="precio">$19</p>
+                            </div>
+                            <div class="platillo">
+                                <p class="nombre">La Sor Juana</p>
+                                <p class="precio">$40</p>
+                                <p class="descripcion">de cochinita (orden de 3).</p>
+                            </div>
+                            <div class="platillo">
+                                <p class="nombre">El Método</p>
+                                <p class="descripcion">de alambre.</p>
+                                <p class="precio">$25</p>
+                            </div>
+                        </article>
+                        <article>
+                            <p class="categoria">Bebidas</p>
+                            <div class="platillo">
+                                <p class="nombre" style="font-size: 20px">Refrescos</p>
+                                <p class="precio">$18</p>
+                                <p class="nombre" style="clear: both; font-size: 20px">Agua de horchata</p>
+                                <p class="precio">LITRO $32</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="galeria" id="galeria">
+            <!-- Swiper -->
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="./static/img/fg1.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./static/img/fg2.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./static/img/fg3.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./static/img/fg4.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./static/img/fg5.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./static/img/fg6.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./static/img/fg7.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./static/img/fg8.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./static/img/fg9.png" alt="">
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+
+        <section class="ubicacion" id="ubicacion">
+            <div class="contenedor">
+                <h3 class="titulo">Ubicación</h3>
+                <div class="direccion">
+                    <p class="calle">C. Cedro 61, Santa María la Ribera <br> Cuauhtémoc, 06400, CDMX</p>
+                    <p class="teleforno">Telefono: 56 1191 3469</p>
+                    <p class="correo"></p>
+                </div>
+
+                <div class="horarios">
+                    <h4>Horarios</h4>
+                    <p class="entre-semana">Lunea a Viernes <br> 09:00 a 21:30 hrs</p>
+                    <p class="fin-semana">Sabados <br> 10:00 a 21:00 hrs</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="mapa">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.2456648068073!2d-99.16503987915614!3d19.4449722480973!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1f9a74c2cd7b1%3A0x22398a9e3f9bef35!2sTacos%20y%20Tortas%20El%20Dramatico!5e0!3m2!1sen!2smx!4v1652792988422!5m2!1sen!2smx" width="1600" height="550" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+    </section>
+
+    <!-- scroll up-->
+    <div class="scrollup">
+        <a href="#"><i class="fa fa-chevron-up"></i></a>
+    </div>
+
+    <!--Pie de Pagina-->
+    <footer>
+        <div class="contenedor">
+            <div class="copyright">
+                <p>El Dramático &copy; 2022</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="./static/js/jquery-3.6.0.min.js"></script>
+    <script src="./static/js/efectos.js"></script>
+    <script src="./static/js/parallax.js"></script>
+    <script defer src="./static/js/index.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: "auto",
+        coverflowEffect: {
+          rotate: 50,
+          stretch: 0,
+          depth: 100,
+          modifier: 1,
+          slideShadows: true,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+
+</body>
+</html>

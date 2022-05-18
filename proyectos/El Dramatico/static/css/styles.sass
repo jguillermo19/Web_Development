@@ -1,0 +1,413 @@
+*
+    padding: 0
+    margin: 0
+    -webkit-box-sizing: border-box
+    -moz-box-sizing: border-box
+    box-sizing: border-box
+body
+    font-family: "Indie Flower", Arial, Helvetica, sans-serif
+    font-size: 16px
+.contenedor
+    width: 90%
+    max-width: 1000px
+    margin: auto
+    overflow: hidden
+
+/****** *** HEADER *** ******/
+/**@import encabezado**/
+header
+    width: 100%
+    background: url('../img/bg.png') #1a1a1a
+    background-size: cover
+    background-attachment: fixed
+    background-position: center 0
+    .contenedor
+        position: relative
+        height: 750px
+    .menu
+        width: 100%
+        text-align: right
+        display: flex
+        justify-content: flex-end
+        .logo
+            cursor: 
+            display: flex
+            flex-direction: column
+            align-items: center
+            color: #fff
+            background: #ED9B13
+            position: fixed
+            line-height: 80px
+            left: 0
+            right: 0
+            width: 100%
+            margin: auto
+            text-decoration: none
+            font-size: 30px
+            font-weight: bold
+            display: none
+        .toggle
+            border: 1px solid #000
+            border-radius: 5px
+            font-size: 30px
+            padding: 1px 6px
+            display: none
+        .nav-menu
+            display: flex
+            list-style: none
+            .nav-menu-item
+                width: max-content    
+                a
+                    color: #fff
+                    font-size: 25px
+                    font-weight: bold
+                    display: inline-block
+                    margin: 40px 20px
+                    text-decoration: none
+                    position: relative
+                    &:hover
+                        text-decoration: underline
+                        color: #ED9B13
+    .texto
+        width: 100%
+        color: #fff
+        display: flex
+        flex-direction: column
+        flex-wrap: wrap
+        justify-content: center
+        align-items: center
+        img
+            margin-top: 40px
+            width: 50%
+        .nombre
+            font-size: 50px
+            font-weight: bold
+            span
+                font-weight: 400
+        h3
+            font-weight: 400
+            font-size: 25px
+
+/****** *** MAIN *** ******/
+.main
+    background: url('../img/bg-textura.png')
+    background-repeat: repeat
+    .acerca-de
+        .contenedor
+            overflow: visible
+            position: relative
+        .foto
+            width: 80%
+            position: absolute
+            left: 0
+            top: -50px
+            z-index: 0
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.35)
+            img
+                vertical-align: top
+                width: 100%
+        article
+            background: #fff
+            padding: 40px
+            width: 70%
+            position: relative
+            top: 800px
+            z-index: 1
+            float: right
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.35)
+            h3
+                text-align: center
+                font-size: 50px
+                font-weight: 400
+                margin-bottom: 30px
+            p
+                text-align: justify
+                font-size: 23px
+                line-height: 28px
+                margin-bottom: 15px
+    .menu
+        padding-top: 50px
+        margin-bottom: 50px
+        .titulo
+            padding-top: 20px
+            font-size: 40px
+            font-weight: 400
+            text-align: center
+            margin-bottom: 40px
+        .contenedor-menu,
+        .contenedor-menu2
+            border: 1px solid #000
+            background: transparent
+            padding: 10px
+            overflow: hidden
+        article
+            width: 50%
+            float: left
+            padding: 20px
+        .categoria
+            font-size: 25px
+            font-weight: bold
+            margin-bottom: 40px
+            text-align: center
+            text-decoration: underline
+        .platillo
+            margin-bottom: 30px
+            padding-bottom: 20px
+            border-bottom: 4px dotted #000
+            overflow: hidden
+        .nombre
+            font-size: 25px
+            font-weight: bold
+            margin-bottom: 15px
+            float: left
+        .precio
+            font-size: 20px
+            margin-bottom: 15px
+            float: right
+        .descripcion
+            font-size: 20px
+            color: #676767
+            float: left
+            padding-top: 3px
+            padding-left: 15px
+    /*.galeria
+        overflow: hidden
+        .foto
+            width: 25%
+            float: left
+            img
+                width: 100%
+                vertical-align: top
+                opacity: 0.7
+                &:hover
+                    opacity: 1
+                    -webkit-transition: all 0.3s ease
+                    -o-transition: all 0.3s ease
+                    transition: all 0.3s ease*/
+    .galeria
+        margin: 75px 0
+        .swiper
+            width: 100%
+            padding-top: 50px
+            padding-bottom: 50px
+        .swiper-slide
+            background-position: center
+            background-size: cover
+            width: 300px
+            height: 300px
+        .swiper-slide img
+            display: block
+            width: 100%
+        .swiper-button-next,
+        .swiper-button-prev
+            color: #ED9B13
+        .swiper-pagination-bullet-active
+            background: #ED9B13
+
+    .ubicacion
+        background: #fff
+        padding: 60px 0
+        overflow: hidden
+        .titulo
+            text-align: center
+            font-size: 40px
+            line-height: 40px
+            font-weight: 400
+            margin-bottom: 40px
+        .direccion
+            float: left
+            width: 50%
+            text-align: center
+            font-size: 23px
+            .calle
+                margin-bottom: 15px
+        .horarios
+            float: right
+            width: 50%
+            text-align: center
+            font-size: 23px
+            overflow: hidden
+            h4
+                text-align: center
+                margin-bottom: 15px
+            .entre-semana,
+            .fin-semana
+                width: 50%
+                float: left
+                text-align: center
+    .mapa
+        width: 100%
+        background: #fff
+        overflow: hidden
+        display: flex
+        flex-direction: column
+        flex-wrap: wrap
+        justify-content: center
+        align-items: center
+        padding-bottom: 60px
+        iframe
+            width: 95%
+            max-height: 500px
+        
+/****** *** SCROLLUP *** ******/
+.scrollup
+    width: 30px
+    height: 30px
+    border-radius: 15px
+    opacity: .3
+    position: fixed
+    bottom: 20px
+    right: 25px
+    color: #fff
+    cursor: pointer
+    background-color: #DC0C14
+    z-index: 1000
+    transition: opacity .5s, background-color .5s
+    -moz-transition: opacity .5s, background-color .5s
+    -webkit-transition: opacity .5s, background-color .5s
+    &:hover
+        background: #DC0C14
+        opacity: 1
+    i
+        font-size: 13px
+        position: absolute
+        opacity: 1
+        color: #fff
+        left: 50%
+        top: 50%
+        margin-top: -7px
+        margin-left: -6px
+        text-decoration: none
+    
+/****** *** FOOTER *** ******/
+footer
+    background: #000
+    .copyright
+        font-size: 22px
+        text-align: center
+        padding: 30px 0
+        color: #fff
+
+/****** *** MEDIA *** ******/
+@media screen and (max-width: 1000px)
+    .main
+        .acerca-de
+            article
+                top: 500px
+
+@media screen and (max-width: 850px)
+    .scrollup
+        left: 100%
+    header
+        .menu
+            .logo
+                display: block
+                left: 100%
+                transition: left 0.3s
+                z-index: 2
+            .toggle
+                z-index: 3
+                margin-top: 20px
+                color: #fff
+                background: #DC0C14
+                cursor: pointer
+                display: block
+                position: fixed
+            .toggle_active
+                color: #fff
+                background: #ED9B13
+                border: none
+            .nav-menu
+                z-index: 2
+                flex-direction: column
+                align-items: center
+                background-color: #1c1c1c
+                position: fixed
+                left: 0
+                top: 80px
+                width: 100%
+                height: calc( 100% - 60px)
+                overflow-y: auto
+                left: 100%
+                transition: left 0.3s
+                
+                .nav-menu-item
+                    width: 100%
+                    &:hover
+                        width: 100%
+                        background-color: #2f2f2f
+                    a
+                        width: 100%
+                        height: 100%
+                        margin: 0px
+                        padding: 50px 0px
+                        &:hover
+                            color: #fff
+            .logo_visible,
+            .nav-menu_visible
+                left: 0%
+
+        .contenedor
+            position: static
+            height: auto
+        .texto
+            position: static
+            margin: 100px 0
+            img
+                margin-top: -100px
+                width: 60%
+            .nombre
+                font-size: 30px
+            h3
+                font-size: 18px
+        .menu
+            text-align: center
+            a
+                margin: 30px 20px 10px 20px
+    .main
+        .acerca-de
+            .foto
+                width: 100%
+                position: relative
+            article
+                position: relative
+                width: 100%
+                top: -50px
+                transform: translate(0px,0)
+        .menu
+            padding-top: 300px
+            article
+                width: 100%
+        .galeria
+            .foto
+                width: 50%
+        .mapa
+            width: 100%
+            margin: auto
+@media screen and (max-width: 500px)
+    .scrollup
+        left: 100%
+    header
+        .texto
+            img
+                margin-top: -100px
+                width: 60%
+    .main
+        .acerca-de
+            article
+                h3
+                    font-size: 34px
+                    margin-bottom: 10px
+        .menu
+            article
+                .nombre,
+                .precio
+                    font-size: 16px
+                    line-height: 16px
+        .ubicacion
+            .direccion
+                margin-bottom: 35px
+            .direccion,
+            .horarios
+                width: 100%
+                text-align: center
